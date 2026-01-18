@@ -1,27 +1,13 @@
-# 🎤 Speech to Text Converter (Learning Project)
+# 📄 Voice to PDF Converter
 
-A simple **web-based Speech to Text Converter** built using **JavaScript** and the **Web Speech API**.  
-This project was developed as a **learning and practice project** to understand real-time speech recognition in web applications.
-
----
-
-## 📌 Description
-The application allows users to convert their **voice into text in real time**.  
-Users can start or stop speech recognition, select different languages, copy the generated text, or download it as a file.
-
-This project helped me gain hands-on experience with **browser APIs, JavaScript DOM manipulation, and event handling**.
+A web app that converts **spoken voice into a downloadable PDF document** using JavaScript and the Web Speech API.
 
 ---
 
-## ✨ Features
-- 🎙️ Start and stop voice recognition
-- 🌍 Multiple language support
-- 📋 Copy transcript to clipboard
-- 💾 Download transcript as a `.txt` file
-- 🧹 Clear transcription text
-- 🔢 Word and character count
-- 📌 Displays active recognition language
-- 💡 Saves selected language using `localStorage`
+## 🚀 Description
+This project listens to voice input from the user, transcribes it into text using speech recognition, and generates a PDF file with the final transcription.
+
+It demonstrates concepts like browser speech APIs, real-time input processing, and PDF creation.
 
 ---
 
@@ -30,10 +16,21 @@ This project helped me gain hands-on experience with **browser APIs, JavaScript 
 - CSS
 - JavaScript
 - Web Speech API (`webkitSpeechRecognition`)
+- jsPDF (for PDF generation)
+
+*(Replace jsPDF with whatever library you are using if different)*
 
 ---
 
-## 🚀 How to Run the Project
+## ✨ Features
+- 🎙️ Start / Stop recording
+- 📝 Convert voice to text
+- 📄 Generate and download PDF
+- 🧹 Clear transcription
+
+---
+
+## 📌 How to Run
 1. Clone the repository:
 ```bash
-git clone https://github.com/nikkhitha12/speech-to-text-learning.git
+git clone https://github.com/nikkhitha12/voice-to-pdf.git
