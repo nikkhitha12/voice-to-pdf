@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Voice to Text App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>🗣️ Voice to Text Converter</h1>
+      <div class="language-choice">
+        <label for="lang-select">Language:</label>
+        <select id="lang-select" onchange="changeLanguage()">
+          <option value="en-US">English (US)</option>
+          <option value="en-GB">English (UK)</option>
+          <option value="fr-FR">Français</option>
+          <option value="es-ES">Español</option>
+          <option value="de-DE">Deutsch</option>
+        </select>
+      </div>
+    </header>
+
+    <div id="status-text" class="status">Click 🎤 to start speaking!</div>
+
+    <div id="result" contenteditable="true" class="transcript"></div>
+
+    <div class="count">
+      <p id="word-count">Words: 0</p>
+      <p id="char-count">Characters: 0</p>
+      <p id="read-time">Reading Time: 0 min</p>
+    </div>
+
+    <div class="button-container">
+      <button class="btn record-btn" onclick="startConverting()">🎤</button>
+      <button class="btn stop-btn" onclick="stopConverting()">⏹️</button>
+      <button class="btn copy-btn" onclick="copyText()">📋</button>
+      <button class="btn download-btn" onclick="downloadText()">⬇️</button>
+      <button class="btn clear-btn" onclick="clearTranscript()">🗑️</button>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
